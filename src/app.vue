@@ -6,9 +6,12 @@
 </template>
 
 <script>
+// TODO
+// This is generated content, don't import it like this.
 import config from '../config.js'
 import '../index.css'
 
+import './assets/css/main.css'
 //import getClasses from './utils/getClasses'
 
 // Tailwind classes
