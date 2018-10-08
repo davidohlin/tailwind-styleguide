@@ -1,7 +1,18 @@
 <template>
 	<div id="app">
-		<h1>Hello world</h1>
-		<backgroundColors :backgroundColors="backgroundColors" />
+		<div class="twsg-container twsg-mx-auto twsg-mt-16">
+			<div class="twsg-flex twsg-flex-wrap twsg-items-stretch twsg--mx-4">
+				<div class="twsg-w-1/6 twsg-px-4">
+					<div class="twsg-sticky" style="top: 1rem">
+						<navigation :config="this.config" />
+					</div>
+				</div>
+				<div class="twsg-w-5/6 twsg-px-4">
+				<h1>Hello world</h1>
+				<backgroundColors :backgroundColors="backgroundColors" />
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -14,6 +25,8 @@ import '../index.css'
 import './assets/css/main.css'
 //import getClasses from './utils/getClasses'
 
+import Navigation from './components/navigation'
+
 // Tailwind classes
 import BackgroundColors from './components/classes/background-colors'
 
@@ -24,6 +37,7 @@ export default {
 		}
 	},
 	components: {
+		navigation: Navigation,
 		backgroundColors: BackgroundColors
 	},
 	methods: {

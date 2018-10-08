@@ -12,7 +12,7 @@ export default {
 <template>
     <div v-if="backgroundColors.length">
         <div class="twsg-flex twsg-justify-between twsg-mt-8 twsg-mb-4">
-            <h2>Background Colours</h2>
+            <h2>Background Colors</h2>
             <!-- <tw-modules module="backgroundColors" :config="config"></tw-modules> -->
         </div>
 
