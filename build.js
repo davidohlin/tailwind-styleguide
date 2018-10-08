@@ -9,7 +9,7 @@ const config = require(configPath)
 
 fs.writeFileSync(
 	'./config.js', 
-	`module.exports = ${JSON.stringify(config)}`
+	`export default ${JSON.stringify(config)}`
 )
 
 fs.readFile(cssPath, (err, css) => {
